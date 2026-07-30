@@ -1,19 +1,46 @@
 aid: awake
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/awake.png
 name: Awake
-description: 'Awake is a company surfaced as a portfolio company of greylock and added to the API Evangelist
-  network as a stub for enrichment. Sector: cybersecurity. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Awake Security was a cybersecurity company founded in 2014 and headquartered
+  in Sunnyvale, California, backed by Greylock Partners. Its network detection and response
+  (NDR) platform applied network traffic analysis, behavioral modeling, and entity
+  resolution to surface malicious activity, insider threats, and compromised devices
+  across enterprise, IoT, and cloud environments without requiring endpoint agents.
+  Arista Networks acquired Awake Security in October 2020 and the technology now ships
+  as Arista NDR. This company profile was surfaced as a Greylock portfolio lead and
+  added to the API Evangelist network for enrichment; the standalone awakesecurity.com
+  domain is behind a bot-challenge and publishes no public API, developer portal, or
+  machine-readable specification.'
 url: https://raw.githubusercontent.com/api-evangelist/awake/refs/heads/main/apis.yml
 x-type: company
 x-source: greylock-portfolio
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquirer: Arista Networks
+x-acquired: '2020-10'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Cybersecurity
+- Network Detection and Response
+- Network Security
+- Threat Detection
+- Security Analytics
+- Greylock Portfolio
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +48,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/awake-domain-security.yml
 - type: Website
   url: https://awakesecurity.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
